@@ -1,0 +1,8 @@
+### Get Online
+
+GET http://localhost:3000/api/conversations/6296e58c91d59e8cc25ee234
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjk0MjI3NzkzOWNlMzJiNjY5ZDEzODciLCJpc0FkbWluIjpmYWxzZSwidXNlcm5hbWUiOiJIYWhhIiwiZW1haWwiOiJoYWhhQGdtYWlsLmNvbSIsImlhdCI6MTY1Mzk2NzI3NywiZXhwIjoxNjU2NTU5Mjc3fQ.LBquSzKqeNmOHVv4lJLamihrmpwV5zEL3OiNo719bWc
+
+{
+}

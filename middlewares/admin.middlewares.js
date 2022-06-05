@@ -1,0 +1,30 @@
+'use strict'
+
+const {
+    decodeToken
+} = require('../services/auth')
+
+const isAdmin = (req, res, next) => {
+    const authorization = req.headers.authorization
+
+    if (!authorization) {
+        return res.status(401).send({
+            status: 0,
+            message: 'You don\'t have authorization'
+        })
+    }
+
+    const token = authorization.split(' ')[1]
+
+    decodeToken(token)
+        .then(response => {
+            req.user = response
+            console.log(response);
+            next()
+        })
+        .catch(response => {
+            res.status(response.status)
+        })
+}
+
+module.exports = isAdmin;
